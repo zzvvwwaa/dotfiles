@@ -1,0 +1,73 @@
+/* --- Rosé Pine Dawn Colors --- */
+@define-color rp-base      #faf4ed;
+@define-color rp-surface   #fffaf3;
+@define-color rp-overlay   #f2e9de;
+@define-color rp-muted     #9893a5;
+@define-color rp-subtle    #797593;
+@define-color rp-text      #575279;
+@define-color rp-love      #b4637a;
+@define-color rp-gold      #ea9d34;
+@define-color rp-rose      #d7827e;
+@define-color rp-pine      #286983;
+@define-color rp-foam      #56949f;
+@define-color rp-iris      #907aa9;
+
+/* --- Wofi Styling --- */
+window {
+    margin: 0px;
+    background-color: @rp-base;
+    border-radius: 8px;
+    border: 2px solid @rp-muted; /* <-- Changed from @rp-foam */
+    color: @rp-text;
+    font-family: 'Monofur Nerd Font';
+    font-size: 14px;
+}
+
+#input {
+    margin: 5px;
+    border-radius: 8px;
+    border: none;
+    color: @rp-text;
+    background-color: @rp-overlay;
+    
+}
+
+#inner-box {
+    margin: 5px;
+    border: none;
+    background-color: @rp-overlay;
+    color: @rp-text;
+    border-radius: 8px;
+}
+
+#outer-box {
+    margin: 15px;
+    border: none;
+    background-color: @rp-base;
+}
+
+#scroll {
+    margin: 0px;
+    border: none;
+}
+
+#text {
+    margin: 5px;
+    border: none;
+    color: @rp-text;
+    font-size: 14px;
+} 
+
+#entry:selected {
+    background-color: @rp-iris; /* <-- Changed from @rp-foam */
+    color: @rp-base; 
+    border-radius: 4px;
+    outline: none;
+}
+
+#entry:selected * {
+    background-color: @rp-iris; /* <-- Changed from @rp-foam */
+    color: @rp-base;
+    border-radius: 4px;
+    outline: none;
+}

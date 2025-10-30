@@ -1,0 +1,88 @@
+/* --- Rosé Pine Dawn Colors --- */
+@define-color rp-base      #faf4ed;
+@define-color rp-surface   #fffaf3;
+@define-color rp-overlay   #f2e9de;
+@define-color rp-text      #575279;
+@define-color rp-love      #b4637a;
+@define-color rp-gold      #ea9d34;
+@define-color rp-rose      #d7827e;
+@define-color rp-pine      #286983;
+@define-color rp-foam      #56949f;
+@define-color rp-iris      #907aa9;
+
+/* --- General Bar Styling --- */
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "FiraCode Nerd Font", sans-serif;
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: @rp-base; /* The solid bar color */
+    color: @rp-text;
+}
+
+/* --- Minimal Module Styling --- */
+#workspaces,
+#clock,
+#disk,
+#memory,
+#cpu,
+#battery,
+#pulseaudio,
+#network,
+#tray {
+    padding: 2px 10px; /* Add padding to space out modules */
+    margin: 0;
+    color: @rp-text;
+}
+
+/* --- Specific Module Colors --- */
+#workspaces button {
+    padding: 0 5px;
+    background-color: transparent;
+    color: @rp-text;
+}
+
+#workspaces button.focused {
+    color: @rp-iris;
+    font-weight: bold;
+}
+
+#clock {
+    color: @rp-iris;
+}
+
+#disk {
+    color: @rp-rose;
+}
+
+#memory {
+    color: @rp-foam;
+}
+
+#cpu {
+    color: @rp-love;
+}
+
+#battery {
+    color: @rp-pine;
+}
+
+#battery.charging, #battery.plugged {
+    color: @rp-foam;
+}
+
+#battery.warning:not(.charging) {
+    color: @rp-love;
+}
+
+#pulseaudio {
+    color: @rp-iris;
+}
+
+#network {
+    color: @rp-gold;
+}
