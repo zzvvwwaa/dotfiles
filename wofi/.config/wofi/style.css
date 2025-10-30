@@ -19,7 +19,7 @@ window {
     border-radius: 8px;
     border: 2px solid @rp-muted; /* <-- Changed from @rp-foam */
     color: @rp-text;
-    font-family: 'Monofur Nerd Font';
+    font-family: 'FiraCode Nerd Font';
     font-size: 14px;
 }
 
