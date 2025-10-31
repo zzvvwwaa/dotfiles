@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 34,
+    "height": 30,
 
     // Define the module layout
     "modules-left": ["hyprland/workspaces"],
@@ -12,6 +12,7 @@
         "cpu",
         "battery",
         "pulseaudio",
+	"custom/bluetooth",
         "network",
         "tray"
     ],
@@ -55,9 +56,15 @@
         "format-wifi": " {essid}",
         "format-ethernet": "",
         "format-disconnected": "⚠",
-        "tooltip-format-wifi": "{essid} ({signalStrength}%)"
+        "tooltip-format-wifi": "{essid} ({signalStrength}%)",
+	"on-click": "kitty --title nmtui-float -e nmtui"
     },
     "tray": {
         "spacing": 10
-    }
+    },
+    "custom/bluetooth": {
+    	"format": "",
+    	"tooltip-text": "Bluetooth Control",
+    	"on-click": "kitty --title bluetooth-float -e bluetoothctl"
+    },
 }
