@@ -1,0 +1,68 @@
+[global]
+    # --- Overall Appearance ---
+    geometry = "0x0-10+40"
+    origin = top-right
+    offset = 10x40
+    width = 300
+    frame_width = 2
+    separator_height = 2
+    padding = 8
+    horizontal_padding = 10
+    corner_radius = 10         # <-- ADDED THIS FOR ROUNDED CORNERS
+
+    # --- Font and Icons ---
+    font = FiraCode Nerd Font 10
+    icon_position = left
+    max_icon_size = 32
+    icon_path = /usr/share/icons/Papirus/16x16/devices/:/usr/share/icons/Papirus/16x16/apps/
+
+    # --- Text ---
+    format = "<b>%s</b>\n%b"
+    alignment = left
+    vertical_alignment = center
+    word_wrap = yes
+
+    # --- Behavior ---
+    follow = mouse
+    sort = yes
+    indicate_hidden = yes
+    sticky_history = yes
+    history_length = 20
+    show_age_threshold = 60
+    ignore_newline = no
+    idle_threshold = 120
+    
+    # --- Progress Bar (for volume/brightness) ---
+    progress_bar = true
+    progress_bar_height = 10
+    progress_bar_frame_width = 1
+    progress_bar_min_width = 150
+    progress_bar_max_width = 150
+
+# -------------------------------------------------------------------
+# THEMES (Rosé Pine Dawn)
+# -------------------------------------------------------------------
+
+[urgency_low]
+    # Low urgency (e.g., music change)
+    background = "#fffaf3"        # Surface
+    foreground = "#575279"        # Text
+    frame_color = "#56949f"       # Foam (No change needed)
+    timeout = 5
+    progress_bar_colors = "#56949f"
+
+[urgency_normal]
+    # Normal urgency (e.g., new message)
+    background = "#fffaf3"        # Surface
+    foreground = "#575279"        # Text
+    frame_color = "#56949f"       # Foam (Changed from Gold)
+    timeout = 10
+    progress_bar_colors = "#ea9d34"
+
+[urgency_critical]
+    # Critical urgency (e.g., low battery)
+    background = "#fffaf3"        # Surface
+    foreground = "#575279"        # Text
+    frame_color = "#56949f"       # Foam (Changed from Love)
+    timeout = 0
+    progress_bar_colors = "#b4637a"

@@ -1,15 +1,14 @@
-/* --- Rosé Pine (Dark) Colors --- */
-@define-color rp-base      #191724;
-@define-color rp-surface   #1f1d2e;
-@define-color rp-overlay   #26233a;
-@define-color rp-text      #e0def4;
-@define-color rp-love      #eb6f92;
-@define-color rp-gold      #f6c177;
-@define-color rp-rose      #ebbcba;
-@define-color rp-pine      #31748f;
-@define-color rp-foam      #9ccfd8;
-@define-color rp-iris      #c4a7e7;
-
+/* --- Rosé Pine Dawn Colors --- */
+@define-color rp-base      #faf4ed;
+@define-color rp-surface   #fffaf3;
+@define-color rp-overlay   #f2e9de;
+@define-color rp-text      #575279;
+@define-color rp-love      #b4637a;
+@define-color rp-gold      #ea9d34;
+@define-color rp-rose      #d7827e;
+@define-color rp-pine      #286983;
+@define-color rp-foam      #56949f;
+@define-color rp-iris      #907aa9;
 /* --- General Bar Styling --- */
 * {
     border: none;
