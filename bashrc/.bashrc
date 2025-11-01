@@ -1,5 +1,14 @@
 # .bashrc
 fastfetch --logo-type small --structure Title:Separator:OS:Host:Kernel:Uptime:Shell:Terminal
+
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
+	rm -f -- "$tmp"
+}
+
 # Source global definitions
 if [ -f /etc/bashrc ]; then
     . /etc/bashrc
