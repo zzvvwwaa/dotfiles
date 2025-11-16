@@ -27,7 +27,7 @@
         }
     },
     "clock": {
-        "format": " {:%H:%M}"
+	"format": " {:%I:%M %p}"
     },
     "disk": {
         "format": " {}%", // Shows used percentage
@@ -65,6 +65,6 @@
     "custom/bluetooth": {
     	"format": "",
     	"tooltip-text": "Bluetooth Control",
-    	"on-click": "kitty --title bluetooth-float -e bluetoothctl"
+    	"on-click": "kitty --title bluetooth-float -e bluetui"
     },
 }

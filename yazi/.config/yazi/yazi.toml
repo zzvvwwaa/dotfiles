@@ -1,0 +1,4 @@
+[opener]
+edit = [
+	{ run = '${EDITOR:-vim} "$@"', desc = "$EDITOR", block = true, for = "unix" }
+]

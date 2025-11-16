@@ -14,7 +14,7 @@ window {
     margin: 0px;
     background-color: @rp-base;
     border-radius: 8px;
-    border: 2px solid @rp-iris; /* <-- Changed from @rp-foam */
+    border: 2px solid @rp-rose; /* <-- Changed from @rp-foam */
     color: @rp-text;
     font-family: 'FiraCode Nerd Font';
     font-size: 14px;
@@ -56,14 +56,14 @@ window {
 } 
 
 #entry:selected {
-    background-color: @rp-iris; /* <-- Changed from @rp-foam */
+    background-color: @rp-rose; /* <-- Changed from @rp-foam */
     color: @rp-base; 
     border-radius: 4px;
     outline: none;
 }
 
 #entry:selected * {
-    background-color: @rp-iris; /* <-- Changed from @rp-foam */
+    background-color: @rp-rose; /* <-- Changed from @rp-foam */
     color: @rp-base;
     border-radius: 4px;
     outline: none;
