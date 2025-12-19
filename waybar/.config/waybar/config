@@ -51,7 +51,7 @@
         "format-icons": {
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol"
+        "on-click": "kitty --title pulsemixer -e pulsemixer"
     },
     "network": {
         "format-wifi": " {essid}",
@@ -72,6 +72,6 @@
     "exec": "~/.config/waybar/cava.sh",
     "format": "{}",
     "tooltip": false,
-    "on-click": "pavucontrol" // Opens volume control on click
+    "on-click": "kitty -e cava" // Opens volume control on click
     },
 }
