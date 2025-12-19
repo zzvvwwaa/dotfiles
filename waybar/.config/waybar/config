@@ -1,13 +1,14 @@
 {
     "layer": "top",
-    "position": "bottom",
-    "height": 30,
+    "position": "top",
+    "height": 34,
 
     // Define the module layout
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
     "modules-right": [
-        "disk",
+        "custom/cava",
+	"disk",
         "memory",
         "cpu",
         "battery",
@@ -19,13 +20,13 @@
 
     // --- Module Settings ---
     "hyprland/workspaces": {
-        "format": "{icon}",
-        "on-click": "activate",
-        "format-icons": {
-            "default": "○",
-            "active": "●"
-        }
+    	"format": "{name}",        // This forces it to show the number (name) instead of an icon
+    	"on-click": "activate",
+    	"persistent-workspaces": {
+        "*": [1, 2, 3, 4]      // Always show workspaces 1, 2, 3, and 4 on every monitor
+    }
     },
+    
     "clock": {
 	"format": " {:%I:%M %p}"
     },
@@ -66,5 +67,11 @@
     	"format": "",
     	"tooltip-text": "Bluetooth Control",
     	"on-click": "kitty --title bluetooth-float -e bluetui"
+    },
+    "custom/cava": {
+    "exec": "~/.config/waybar/cava.sh",
+    "format": "{}",
+    "tooltip": false,
+    "on-click": "pavucontrol" // Opens volume control on click
     },
 }

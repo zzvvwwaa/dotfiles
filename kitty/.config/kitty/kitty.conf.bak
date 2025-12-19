@@ -42,6 +42,6 @@ font_features FiraCode Nerd Font +calt +ss01 +ss02 +ss03 +ss04 +ss05 +zero
 
 
 # BEGIN_KITTY_THEME
-# Rosé Pine
+# Catppuccin-Latte
 include current-theme.conf
 # END_KITTY_THEME

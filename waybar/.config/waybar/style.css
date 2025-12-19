@@ -43,14 +43,25 @@ window#waybar {
 #workspaces button {
     padding: 0 5px;
     background-color: transparent;
-    color: @rp-text;
+    color: @rp-text; /* Normal text color */
+    font-weight: normal;
+    transition: all 0.3s ease; /* Smooth transition */
 }
 
+/* The Active/Focused Workspace */
+#workspaces button.active, 
 #workspaces button.focused {
-    color: @rp-iris;
-    font-weight: bold;
+    color: @rp-iris;           /* Change text to Iris (Purple) */
+    background-color: @rp-overlay; /* Optional: lighter background for active one */
+    font-weight: bold;         /* Make it bold */
+    border-radius: 0px;       /* Keep it rounded if it has a background */
 }
 
+/* Hover state (when you mouse over them) */
+#workspaces button:hover {
+    color: @rp-love;           /* Change color on hover */
+    background-color: @rp-overlay;
+}
 #clock {
     color: @rp-iris;
 }
@@ -88,4 +99,16 @@ window#waybar {
 }
 #custom-bluetooth {
     color: @rp-pine;
+}
+#custom-cava {
+    /* Rose Pine "Iris" color */
+
+    /* Optional: Rose Pine "Love" color for a warmer look */
+    color: @rp-foam; 
+
+    font-family: "FiraCode Nerd Font", sans-serif; /* Ensure your font supports the block characters */
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+    letter-spacing: 2px;
 }

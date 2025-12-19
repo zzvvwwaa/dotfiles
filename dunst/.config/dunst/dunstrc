@@ -8,7 +8,7 @@
     separator_height = 2
     padding = 8
     horizontal_padding = 10
-    corner_radius = 10         # <-- ADDED THIS FOR ROUNDED CORNERS
+    corner_radius = 0         # <-- ADDED THIS FOR ROUNDED CORNERS
 
     # --- Font and Icons ---
     font = FiraCode Nerd Font 10

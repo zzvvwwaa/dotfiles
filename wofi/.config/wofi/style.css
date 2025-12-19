@@ -13,16 +13,16 @@
 window {
     margin: 0px;
     background-color: @rp-base;
-    border-radius: 8px;
+    border-radius: 0px;
     border: 2px solid @rp-rose; /* <-- Changed from @rp-foam */
     color: @rp-text;
     font-family: 'FiraCode Nerd Font';
-    font-size: 14px;
+    font-size: 16px;
 }
 
 #input {
     margin: 5px;
-    border-radius: 8px;
+    border-radius: 0px;
     border: none;
     color: @rp-text;
     background-color: @rp-overlay;
@@ -34,7 +34,7 @@ window {
     border: none;
     background-color: @rp-overlay;
     color: @rp-text;
-    border-radius: 8px;
+    border-radius: 0px;
 }
 
 #outer-box {
@@ -52,19 +52,19 @@ window {
     margin: 5px;
     border: none;
     color: @rp-text;
-    font-size: 14px;
+    font-size: 16px;
 } 
 
 #entry:selected {
     background-color: @rp-rose; /* <-- Changed from @rp-foam */
     color: @rp-base; 
-    border-radius: 4px;
+    border-radius: 0px;
     outline: none;
 }
 
 #entry:selected * {
     background-color: @rp-rose; /* <-- Changed from @rp-foam */
     color: @rp-base;
-    border-radius: 4px;
+    border-radius: 0px;
     outline: none;
 }
