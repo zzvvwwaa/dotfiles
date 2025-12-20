@@ -38,7 +38,8 @@
         "format": " {}%" // RAM usage
     },
     "cpu": {
-        "format": " {usage}%"
+        "format": " {usage}%",
+	"on-click": "kitty --title waybtop -e btop --force-utf"
     },
     "battery": {
         "format": "{icon} {capacity}%",
