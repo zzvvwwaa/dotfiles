@@ -23,12 +23,31 @@
     	"format": "{name}",        // This forces it to show the number (name) instead of an icon
     	"on-click": "activate",
     	"persistent-workspaces": {
-        "*": [1, 2, 3, 4]      // Always show workspaces 1, 2, 3, and 4 on every monitor
+        "*": [1, 2, 3]      // Always show workspaces 1, 2, 3, and 4 on every monitor
     }
     },
-    
-    "clock": {
-	"format": " {:%I:%M %p}"
+   
+	"clock": {
+        "format": " {:%I:%M %p}",
+        "tooltip-format": "<span font='FiraCode Nerd Font'>{calendar}</span>",
+        "calendar": {
+            "mode": "month",
+            "mode-mon-col": 3,
+            "weeks-pos": "right",
+            "on-scroll": 1,
+            "format": {
+                "months": "<span color='#907aa9'><b>{}</b></span>",   // Iris
+                "days": "<span color='#575279'>{}</span>",     // Text
+                "weeks": "<span color='#56949f'><b>W{}</b></span>",   // Foam
+                "weekdays": "<span color='#d7827e'><b>{}</b></span>", // Rose
+                "today": "<span color='#b4637a'><b><u>{}</u></b></span>" // Love
+            }
+        },
+        "actions": {
+            "on-click-right": "mode",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
     },
     "disk": {
         "format": " {}%", // Shows used percentage
